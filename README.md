@@ -6,6 +6,7 @@ My collection of my notes, templates and guidelines for working on php based sof
   - [LALE](#lale)
   - [Feature implementation check list](#feature-implementation-check-list)
   - [Must haves](#must-haves)
+  - [Composer.json](#composerjson)
 
 ## LALE
 
@@ -44,7 +45,19 @@ graph TD;
 ## Must haves
 
 - [ ] Virtualization(using Docker)
+- [ ] Editorconfig
 - [ ] PHPunit
 - [ ] PHP CodeSniffer
 - [ ] PHPStan
 - [ ] CI
+
+## Composer.json
+
+```json
+"require-dev": {
+  "phpunit/phpunit": "^10.0",
+  "phpstan/phpstan": "^1.10",
+  "roave/security-advisories": "dev-master",
+  "squizlabs/php_codesniffer": "^3.7"
+}
+```
